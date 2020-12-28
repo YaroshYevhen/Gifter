@@ -8683,12 +8683,6 @@ a, a:hover {
     }
 }
 
-@media screen and (max-width: 767px) and (orientation: portrait) and (min-height: 661px) {
-    .c-section-home {
-        height: 90%
-    }
-}
-
 .c-section-home__img {
     display: block;
     position: absolute;
@@ -9062,7 +9056,7 @@ a, a:hover {
 
 @media screen and (max-width: 767px) and (orientation: portrait) {
     .home__content {
-        margin: 60% auto 0;
+        margin: 0 auto 0;
         min-width: 220px
     }
 }
@@ -9317,6 +9311,13 @@ a, a:hover {
     .home__bonus-title .bonus {
         font-size: 180px
     }
+    .card-wrapper {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px;
+    }
+
 }
 
 @media screen and (max-width: 1024px) and (orientation: portrait) and (max-height: 800px) {

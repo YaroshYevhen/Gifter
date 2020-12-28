@@ -2125,6 +2125,50 @@ html:not(.ie) .popup-menu--single .nav__link span,html:not(.ie) .promo--mob-comm
 }
 
 @media only screen and (max-width: 767px) {
+    .home__content-right-form .form {
+        width: 100%;
+        max-width: calc(100vw - 38px);
+        margin: auto;
+    }
+    .form__group {
+        flex-direction: column;
+        align-items: center;
+    }
+    .form__group .input__wrapper:first-child {
+        margin-right: 0;
+    }
+    .home__content {
+        width: 100% !important;
+    }
+    .home__content-right-form .button {
+        width: 100% !important;
+    }
+    .home__content-right {
+        width: 100% !important;
+    }
+    .home__content-group {
+        align-items: center;
+    }
+    .home__content-right-form {
+        padding: 0 15px;
+    }
+    .card-wrapper {
+        max-width: none !important;
+        width: 416px !important;
+        height: 237px !important;
+        margin: 0 auto !important;
+    }
+    .card-wrapper>.jp-card-container {
+        transform-origin: center !important;
+        transform: scale(0.625);
+    }
+    .input__wrapper {
+        max-width: 260px;
+    }
+    .home__content-right-form .button {
+        max-width: 260px !important;
+        margin: 0 auto;
+    }
     .popup__close-o {
         top: 9px;
         right: 13px;
