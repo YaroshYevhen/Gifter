@@ -47,9 +47,6 @@
                                     <!-- <div class="home__btn">
                                         <a href="#" data-toggle="modal"  data-target="#modalRegistration" class="c-btn"><span class="c-btn__text">ПРИНЯТЬ УЧАСТИЕ</span></a>
                                     </div> -->
-                                    <div class="home__terms">
-                                        <a href="#" data-toggle="modal" data-target="#modalTerms">Правила и условия</a>
-                                    </div>
                                 </form>
                             </div>
                           <div class="home__content-right-form" id="main-page-form1">
@@ -70,7 +67,10 @@
                                     <input type="email" name="email" placeholder=" " class="form__input" required>
                                     <span class="custom-placeholder">E-mail</span>
                                 </div>
-                              <button type="submit" class="button" onclick="document.querySelector('input[name=name]').value = document.querySelector('input[name=firstname]').value? document.querySelector('input[name=firstname]').value + ' ' + document.querySelector('input[name=lastname]').value : ''; document.querySelector('input[name=name]').value? document.querySelector('.jp-card-name').textContent = document.querySelector('input[name=name]').value : true">Продолжить</button>
+                              <button type="submit" class="button button-continue">Продолжить</button>
+                                <div class="home__terms">
+                                    <a href="#" data-toggle="modal" data-target="#modalTerms">Правила и условия</a>
+                                </div>
                             </form>
                           </div>
                           <div class="home__content-right-form" id="main-page-form2">
@@ -100,7 +100,7 @@
 
                               </div>
                             </form>
-                            <button type="button" class="button button-submit" onclick="document.querySelector('#form').submit()">Совершить платеж</button>
+                            <button type="button" class="button button-submit">Принять участие</button>
                           </div>
                         </div>
                     </div>
@@ -394,6 +394,14 @@
         container: '.card-wrapper',
         formatting: true,
       });
+    });
+    $('.button-continue').click((e) => {
+        document.querySelector('input[name=name]').value = document.querySelector('input[name=firstname]').value? document.querySelector('input[name=firstname]').value + ' ' + document.querySelector('input[name=lastname]').value : ''; 
+        if(document.querySelector('input[name=name]').value)
+        document.querySelector('.jp-card-name').textContent = document.querySelector('input[name=name]').value;
+    });
+    $('.button-submit').click((e) => {
+        document.querySelector('#form').submit();
     });
 </script>
 

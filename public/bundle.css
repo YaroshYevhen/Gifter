@@ -8273,7 +8273,7 @@ a, a:hover {
 
 @media screen and (max-width: 1024px) and (orientation: portrait) {
     .c-main {
-        background: url(images/bg-mob.jpg) no-repeat center -100px transparent;
+        background: url(images/bg-mob.jpg) no-repeat center 0px transparent;
         background-size: 100% auto
     }
 }
@@ -9025,7 +9025,8 @@ a, a:hover {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-align: center;
-        align-items: center
+        align-items: center;
+        margin-top: 80%;
     }
 }
 
@@ -9549,7 +9550,8 @@ a, a:hover {
 }
 
 .home__terms {
-    text-align: center
+    text-align: center;
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 767px) {
