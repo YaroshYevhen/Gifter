@@ -70,7 +70,7 @@
                                     <input type="email" name="email" placeholder=" " class="form__input" required>
                                     <span class="custom-placeholder">E-mail</span>
                                 </div>
-                              <button type="submit" class="button">Продолжить</button>
+                              <button type="submit" class="button" onclick="document.querySelector('input[name=name]').value = document.querySelector('input[name=firstname]').value? document.querySelector('input[name=firstname]').value + ' ' + document.querySelector('input[name=lastname]').value : ''; document.querySelector('input[name=name]').value? document.querySelector('.jp-card-name').textContent = document.querySelector('input[name=name]').value : true">Продолжить</button>
                             </form>
                           </div>
                           <div class="home__content-right-form" id="main-page-form2">
@@ -99,9 +99,8 @@
                                 </div>
 
                               </div>
-                              <input id="submit" type="submit">
                             </form>
-                            <label type="submit" class="button">Совершить платеж</label>
+                            <button type="button" class="button button-submit" onclick="document.querySelector('#form').submit()">Совершить платеж</button>
                           </div>
                         </div>
                     </div>
