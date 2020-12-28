@@ -9144,7 +9144,7 @@ a, a:hover {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    background: #f8ff13;
+    background: #f8ff13 !important;
     color: black;
     font-family: Pari-Match, sans-serif;
     font-weight: 500;
@@ -9153,16 +9153,17 @@ a, a:hover {
     letter-spacing: .04em;
     text-transform: uppercase;
     transform: skewX(-14deg);
-    border: 2px solid #f8ff13;
+    border: 2px solid #f8ff13 !important;
+    border-radius: 0 !important;
     max-width: 420px;
     transition: all .2s ease;
     cursor: pointer;
 }
 
 .home__content-right-form .button:hover {
-    background-color: transparent;
-    border-color: #f8ff13;
-    color: #f8ff13;
+    background-color: transparent !important;
+    border-color: #f8ff13 !important;
+    color: #f8ff13 !important;
 }
 
 .form__group {
