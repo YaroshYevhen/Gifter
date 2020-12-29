@@ -25,6 +25,8 @@
 
 <div class="page">
     <main class="c-main" role="main">
+        <input type="button" data-toggle="modal"  data-target="#modalPayment" class="payment-button">
+        <input type="button" data-toggle="modal"  data-target="#modalThanks" class="thanks-button">
         <section class="c-section c-section-home" id="home">
             <div class="o-container">
                 <div class="home__content">
@@ -249,6 +251,51 @@
     </div>
 </div>
 
+<!-- Modal Payment -->
+<div class="modal fade vertical modal-custom modal-payment" id="modalPayment" tabindex="-1" aria-labelledby="modalPaymentLabel">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" class="modal-close" data-dismiss="modal" aria-label="Close"><span class="icon-close"></span></a>
+            </div>
+            <div class="modal-body">
+                <h4 class="modal-title">подтверждение оплаты</h4>
+                <div class="string">
+                    <span class="string__title">Номер банковской карты</span>
+                    <span class="string__value">4567 9876 **** 3456</span>
+                </div>
+                <div class="string">
+                    <span class="string__title">Сумма</span>
+                    <span class="string__value">17 USD</span>
+                </div>
+                <div class="string">
+                    <span class="string__title">Дата</span>
+                    <span class="string__value">29.12.2020</span>
+                </div>
+                <div class="modal-code">
+                    <span class="modal-code__text">Код из SMS</span>
+                    <div class="input__wrapper">
+                        <input type="text" name="code" placeholder=" " class="form__input" required>
+                        <span class="error__text">Сообщение об ошибке</span>
+                    </div>
+                </div>
+                <button type="button" class="button button-submit">Подтвердить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Thanks -->
+<div class="modal fade vertical modal-custom modal-payment" id="modalThanks" tabindex="-1" aria-labelledby="modalThanksLabel">    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                Спасибо, Ваша оплата прошла успешно!
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Modal Video -->
 <div class="modal fade vertical modal-custom-1" id="modalRegistration" tabindex="-1" role="dialog" aria-labelledby="modalRegisterLabel">
     <div class="js-popup1 registration-popup is-active modal-dialog" data-popup="registration" role="document" style="position: static;">
@@ -403,6 +450,8 @@
     $('.button-submit').click((e) => {
         document.querySelector('#form').submit();
     });
+    $('.payment-button').click();
+    // $('.thanks-button').click();
 </script>
 
 </body>

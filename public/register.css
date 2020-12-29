@@ -38,6 +38,9 @@
 /*}*/
 
 /* NEW */
+.payment-button {
+    display: none;
+}
 .jp-card-front {
     background: #333 !important;
 }
@@ -48,7 +51,8 @@
     background: #777 !important;
 }
 
-.home__content-right-form .form .input__wrapper input {
+.home__content-right-form .form .input__wrapper input,
+.input__wrapper input {
     border: 1px solid #828282;
     height: 58px;
     transition: border-color .3s;
@@ -121,6 +125,9 @@
     display: none;
 }
 
+.input__wrapper input:active,
+.input__wrapper input:focus,
+.input__wrapper input:not(:placeholder-shown),
 .home__content-right-form .form input:active,
 .home__content-right-form .form input:focus,
 .home__content-right-form .form .form__input:not(:placeholder-shown) {
